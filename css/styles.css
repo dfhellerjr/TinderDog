@@ -1,0 +1,315 @@
+html
+{
+  box-sizing: border-box;
+  /* set relative font-size (1 rem) to 10px */
+  font-size: 62.5%;
+}
+body
+{
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 1.6rem;
+}
+h1, h2, h3, h4, h5, h6
+{
+  font-family: "Montserrat-Bold";
+}
+p
+{
+  color: #8f8f8f;
+}
+
+/* Sections */
+.section-primary
+{
+  background-color: #ff4c68;
+  color: #fff;
+}
+.section-white
+{
+  background-color: #fff;
+}
+.section-colored
+{
+  background-color: #ef8172;
+  color: #fff;
+}
+
+/* Containers */
+.container-fluid
+{
+  padding: 7.5% 15%;
+}
+
+/* Headings */
+.big-heading
+{
+  font-family: "Montserrat-Black";
+  font-size: 5.6rem;
+  line-height: 1.5;
+}
+.section-heading
+{
+  font-size: 4.8rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.standard-button
+{
+  margin: 6% 4% 5% 0;
+  font-size: 2.1rem;
+  height: 4.6rem;
+  padding: 5px 1.5rem;
+  border-radius: 6px;
+}
+
+/* Header Section */
+#header
+{
+  text-align: left;
+}
+#header .container-fluid
+{
+  padding-top: 3%;
+}
+/* Navigation */
+.navbar
+{
+  padding: 0 0 7.5rem;
+}
+.navbar-brand
+{
+  display: inline-block;
+  font-family: "Ubuntu";
+  font-size: 4rem;
+  font-weight: bold;
+}
+.navbar-nav li
+{
+  margin-right: 3rem;
+}
+.nav-link
+{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+/* Title */
+.header-img
+{
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* Features Section */
+#features
+{
+  position: relative;
+}
+.feature-title
+{
+  font-size: 2.8rem;
+}
+.feature-box
+{
+  padding: 0 4.7%;
+}
+/* Icons */
+.icon
+{
+  color: #ef8172;
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 1.5rem;
+}
+.icon:hover
+{
+  color: #ff4c68;
+}
+
+/* Testimonials */
+.carousel-item
+{
+  padding: 6% 14% 4%;
+}
+.testimonial-text
+{
+  font-size: 4.8rem;
+  line-height: 1.5;
+}
+.testimonial-img
+{
+  width: 15%;
+  border-radius: 100%;
+  margin: 2rem 1.5rem 1rem;
+}
+em
+{
+  font-size: 1.8rem;
+  height: 15%;
+}
+.carousel-control
+{
+  margin-top: 24rem;
+}
+
+/* Press */
+#press .container-fluid
+{
+  padding:  0 0 2%;
+}
+.press-logo
+{
+  width: 15%;
+  margin: 0 2rem 5rem;
+}
+
+/* Pricing */
+#pricing
+{
+  padding-top: 10rem;
+}
+.pricing-column
+{
+  padding: 3% 2%;
+}
+.card-title
+{
+  font-size: 3rem;
+  padding: 1.2rem;
+}
+.price-text
+{
+  font-size: 4.8rem;
+  line-height: 1.5;
+}
+.plan-level
+{
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 2rem;
+}
+
+/* CTA */
+#cta .brn-light
+{
+  background-color: #efefef;
+}
+#cta .brn-light:hover
+{
+  background-color: #fff;
+}
+
+/* Footer */
+.social-icon
+{
+  margin: 2rem 1rem;
+  color: black;
+}
+#footer p
+{
+  font-size: 2rem;
+}
+
+/******* Media queries *******/
+/* 1028px max-width */
+@media (max-width: 1028px)
+{
+  #header
+  {
+    text-align: center;
+  }
+  .header-img
+  {
+    position: static;
+    transform: rotate(0);
+  }
+  .testimonial-text,
+  #cta .big-heading 
+  {
+    font-size: 4rem;
+  }
+  #cta .container-fluid 
+  {
+    padding: 15%;
+  }
+}
+
+/* 768px max-width */
+@media (max-width: 768px)
+{
+  .carousel-item
+  {
+    padding-top: 10%;;
+  }
+  .testimonial-text 
+  {
+    font-size: 3.5rem;
+  }
+  .section-heading 
+  {
+    font-size: 4rem;
+  }
+}
+
+/* 576px max-width */
+@media (max-width: 576px)
+{
+  .navbar
+  {
+    padding: 0 0 5rem;
+  }
+  .navbar-brand 
+  {
+    font-size: 4rem;
+  }
+  .testimonial-text
+  {
+    font-size: 3rem;
+  }
+  .testimonial-img 
+  {
+    width: 20%;
+  }
+  .carousel-item em 
+  {
+    font-size: 1.2rem;
+  }
+  .carousel-control
+  {
+    margin-top: 40%;
+  }
+  .press-logo
+  {
+    width: 15%;
+    margin: 0 1rem 5rem;
+  }
+}
+
+/* 400px max-width */
+@media (max-width: 460px)
+{
+  #header .big-heading 
+  {
+    font-size: 4.8rem;
+    line-height: 1;
+  }
+}
+
+/* 360px max-width */
+@media (max-width: 360px)
+{
+  .navbar-brand
+  {
+    font-size: 3.5rem;
+  }
+  .testimonial-img 
+  {
+    width: 25%;
+  }
+}
+
+
+
